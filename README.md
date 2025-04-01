@@ -29,24 +29,20 @@ The **News Research Tool** is a Streamlit-based application that allows users to
 Ensure you have Python installed (>=3.8) and `pip` package manager.
 
 ### Steps
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/news-research-tool.git
-   cd news-research-tool
-   ```
-2. Install dependencies:
+
+1. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
-3. Set up your API key for Google Gemini AI:
+2. Set up your API key for Google Gemini AI:
    - Create a `.env` file in the project root.
    - Add your API key:
      ```sh
      GEMINI_API_KEY=your_api_key_here
      ```
-4. Run the application:
+3. Run the application:
    ```sh
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 ## Usage
@@ -58,7 +54,7 @@ Ensure you have Python installed (>=3.8) and `pip` package manager.
 ## File Structure
 ```
 news-research-tool/
-│── app.py               # Main Streamlit application
+│── main.py               # Main Streamlit application
 │── .env                 # Environment variables (API keys)
 │── requirements.txt     # Dependencies
 │── faiss_store_gemini.pkl  # FAISS vectorstore (saved)
